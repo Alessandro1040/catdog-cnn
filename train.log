@@ -1,0 +1,99 @@
+Device: mps  |  seed: 42
+Classi: ['Cat', 'Dog']  (0=Cat, 1=Dog)
+Train: 17479 | Val: 3745 | Test: 3746
+Parametri: 1,206,241
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 01/40 | train_loss=0.6331 acc=0.6428 | val_loss=0.6281 acc=0.6107 | lr=1.00e-03 | 63s
+    [ok] val_loss migliorata (0.6281) — modello salvato
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 02/40 | train_loss=0.5646 acc=0.7118 | val_loss=0.5988 acc=0.7194 | lr=1.00e-03 | 58s
+    [ok] val_loss migliorata (0.5988) — modello salvato
+Epoch 03/40 | train_loss=0.4995 acc=0.7625 | val_loss=0.4805 acc=0.7858 | lr=1.00e-03 | 70s
+    [ok] val_loss migliorata (0.4805) — modello salvato
+Epoch 04/40 | train_loss=0.4372 acc=0.8004 | val_loss=0.4391 acc=0.7995 | lr=1.00e-03 | 71s
+    [ok] val_loss migliorata (0.4391) — modello salvato
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 05/40 | train_loss=0.3838 acc=0.8298 | val_loss=0.4713 acc=0.8096 | lr=1.00e-03 | 72s
+    [--] nessun miglioramento (1/7)
+Epoch 06/40 | train_loss=0.3442 acc=0.8533 | val_loss=0.2950 acc=0.8737 | lr=1.00e-03 | 73s
+    [ok] val_loss migliorata (0.2950) — modello salvato
+Epoch 07/40 | train_loss=0.2991 acc=0.8726 | val_loss=0.3103 acc=0.8673 | lr=1.00e-03 | 74s
+    [--] nessun miglioramento (1/7)
+Epoch 08/40 | train_loss=0.2684 acc=0.8890 | val_loss=0.2418 acc=0.8943 | lr=1.00e-03 | 74s
+    [ok] val_loss migliorata (0.2418) — modello salvato
+Epoch 09/40 | train_loss=0.2486 acc=0.8976 | val_loss=0.2210 acc=0.9063 | lr=1.00e-03 | 74s
+    [ok] val_loss migliorata (0.2210) — modello salvato
+Epoch 10/40 | train_loss=0.2383 acc=0.9009 | val_loss=0.1836 acc=0.9300 | lr=1.00e-03 | 75s
+    [ok] val_loss migliorata (0.1836) — modello salvato
+Epoch 11/40 | train_loss=0.2082 acc=0.9179 | val_loss=0.1760 acc=0.9295 | lr=1.00e-03 | 78s
+    [ok] val_loss migliorata (0.1760) — modello salvato
+Epoch 12/40 | train_loss=0.1962 acc=0.9217 | val_loss=0.2065 acc=0.9199 | lr=1.00e-03 | 77s
+    [--] nessun miglioramento (1/7)
+Epoch 13/40 | train_loss=0.1832 acc=0.9259 | val_loss=0.1681 acc=0.9391 | lr=1.00e-03 | 77s
+    [ok] val_loss migliorata (0.1681) — modello salvato
+Epoch 14/40 | train_loss=0.1832 acc=0.9283 | val_loss=0.1973 acc=0.9239 | lr=1.00e-03 | 77s
+    [--] nessun miglioramento (1/7)
+Epoch 15/40 | train_loss=0.1684 acc=0.9311 | val_loss=0.2944 acc=0.8961 | lr=1.00e-03 | 87s
+    [--] nessun miglioramento (2/7)
+Epoch 16/40 | train_loss=0.1611 acc=0.9333 | val_loss=0.1442 acc=0.9418 | lr=1.00e-03 | 89s
+    [ok] val_loss migliorata (0.1442) — modello salvato
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/site-packages/PIL/TiffImagePlugin.py:950: UserWarning: Truncated File Read
+  warnings.warn(str(msg))
+Epoch 17/40 | train_loss=0.1510 acc=0.9391 | val_loss=0.1537 acc=0.9453 | lr=1.00e-03 | 86s
+    [--] nessun miglioramento (1/7)
+Epoch 18/40 | train_loss=0.1451 acc=0.9410 | val_loss=0.1351 acc=0.9447 | lr=1.00e-03 | 81s
+    [ok] val_loss migliorata (0.1351) — modello salvato
+Epoch 19/40 | train_loss=0.1365 acc=0.9455 | val_loss=0.1445 acc=0.9429 | lr=1.00e-03 | 82s
+    [--] nessun miglioramento (1/7)
+Epoch 20/40 | train_loss=0.1314 acc=0.9483 | val_loss=0.1358 acc=0.9479 | lr=1.00e-03 | 83s
+    [--] nessun miglioramento (2/7)
+Epoch 21/40 | train_loss=0.1373 acc=0.9453 | val_loss=0.1313 acc=0.9514 | lr=1.00e-03 | 82s
+    [ok] val_loss migliorata (0.1313) — modello salvato
+Epoch 22/40 | train_loss=0.1254 acc=0.9493 | val_loss=0.1124 acc=0.9562 | lr=1.00e-03 | 79s
+    [ok] val_loss migliorata (0.1124) — modello salvato
+Epoch 23/40 | train_loss=0.1161 acc=0.9541 | val_loss=0.1445 acc=0.9453 | lr=1.00e-03 | 78s
+    [--] nessun miglioramento (1/7)
+Epoch 24/40 | train_loss=0.1123 acc=0.9562 | val_loss=0.1351 acc=0.9479 | lr=1.00e-03 | 78s
+    [--] nessun miglioramento (2/7)
+Epoch 25/40 | train_loss=0.1159 acc=0.9534 | val_loss=0.1340 acc=0.9485 | lr=1.00e-03 | 78s
+    [--] nessun miglioramento (3/7)
+Epoch 26/40 | train_loss=0.1101 acc=0.9571 | val_loss=0.1748 acc=0.9389 | lr=5.00e-04 | 78s
+    [--] nessun miglioramento (4/7)
+Epoch 27/40 | train_loss=0.0871 acc=0.9663 | val_loss=0.1049 acc=0.9591 | lr=5.00e-04 | 78s
+    [ok] val_loss migliorata (0.1049) — modello salvato
+Epoch 28/40 | train_loss=0.0855 acc=0.9673 | val_loss=0.0952 acc=0.9648 | lr=5.00e-04 | 78s
+    [ok] val_loss migliorata (0.0952) — modello salvato
+Epoch 29/40 | train_loss=0.0763 acc=0.9709 | val_loss=0.1144 acc=0.9594 | lr=5.00e-04 | 78s
+    [--] nessun miglioramento (1/7)
+Epoch 30/40 | train_loss=0.0774 acc=0.9709 | val_loss=0.1069 acc=0.9613 | lr=5.00e-04 | 77s
+    [--] nessun miglioramento (2/7)
+Epoch 31/40 | train_loss=0.0758 acc=0.9701 | val_loss=0.0919 acc=0.9645 | lr=5.00e-04 | 78s
+    [ok] val_loss migliorata (0.0919) — modello salvato
+Epoch 32/40 | train_loss=0.0749 acc=0.9710 | val_loss=0.0962 acc=0.9637 | lr=5.00e-04 | 78s
+    [--] nessun miglioramento (1/7)
+Epoch 33/40 | train_loss=0.0681 acc=0.9729 | val_loss=0.0952 acc=0.9672 | lr=5.00e-04 | 78s
+    [--] nessun miglioramento (2/7)
+Epoch 34/40 | train_loss=0.0722 acc=0.9707 | val_loss=0.0901 acc=0.9661 | lr=5.00e-04 | 78s
+    [ok] val_loss migliorata (0.0901) — modello salvato
+Epoch 35/40 | train_loss=0.0674 acc=0.9740 | val_loss=0.1019 acc=0.9658 | lr=5.00e-04 | 78s
+    [--] nessun miglioramento (1/7)
+Epoch 36/40 | train_loss=0.0642 acc=0.9760 | val_loss=0.0946 acc=0.9653 | lr=5.00e-04 | 78s
+    [--] nessun miglioramento (2/7)
+Epoch 37/40 | train_loss=0.0643 acc=0.9736 | val_loss=0.1091 acc=0.9618 | lr=5.00e-04 | 82s
+    [--] nessun miglioramento (3/7)
+Epoch 38/40 | train_loss=0.0639 acc=0.9761 | val_loss=0.1162 acc=0.9599 | lr=2.50e-04 | 84s
+    [--] nessun miglioramento (4/7)
+Epoch 39/40 | train_loss=0.0533 acc=0.9795 | val_loss=0.0957 acc=0.9656 | lr=2.50e-04 | 84s
+    [--] nessun miglioramento (5/7)
+Epoch 40/40 | train_loss=0.0480 acc=0.9820 | val_loss=0.0914 acc=0.9690 | lr=2.50e-04 | 83s
+    [--] nessun miglioramento (6/7)
+Pesi migliori ripristinati.
+Grafici salvati in training_history.png
+
+TEST — loss=0.0956 | accuracy=0.9645
+Metriche salvate in metrics.json
+
+Done — test accuracy 96.45% in 52.0 min.

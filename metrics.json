@@ -1,0 +1,19 @@
+{
+  "device": "mps",
+  "seed": 42,
+  "img_size": 128,
+  "batch_size": 64,
+  "epochs_run": 40,
+  "best_val_loss": 0.0901,
+  "test_loss": 0.0956,
+  "test_accuracy": 0.9645,
+  "params": 1206241,
+  "n_train": 17479,
+  "n_val": 3745,
+  "n_test": 3746,
+  "classes": [
+    "Cat",
+    "Dog"
+  ],
+  "train_minutes": 52.0
+}
