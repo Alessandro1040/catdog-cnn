@@ -5,7 +5,7 @@ Classificatore **gatto vs cane** addestrato **da zero** (nessun peso pre-addestr
 e addestrata sulla GPU Apple (**MPS**).
 
 Il repo contiene tutto quello che serve: download del dataset, training con le best
-practice, valutazione e inferenza su nuove immagini.
+practice, valutazione, inferenza su nuove immagini e una demo web.
 
 ---
 
@@ -44,11 +44,55 @@ all'85-92%; qui si arriva a **96.45%** grazie ad augmentation + BN + dropout + s
 | `prepare_dataset.py` | scarica il dataset (~825 MB), estrae `Cat/` e `Dog/`, **rimuove le ~2000 immagini corrotte** |
 | `train.py` | training completo: augmentation, split, CNN, early stopping, scheduler, grafici, test |
 | `predict.py` | classifica nuove immagini con il modello salvato |
+| `app.py` | **demo web** (Flask): trascini una foto nel browser e vedi la predizione |
+| `samples/` | 6 foto di esempio (3 gatti + 3 cani) usate dalla demo |
 | `best_catdog.pt` | checkpoint del modello migliore (~5 MB): pesi + `img_size` + classi + statistiche di normalizzazione |
 | `training_history.png` | grafici di loss / accuracy / learning rate |
 | `predizioni_esempio.png` | esempio di predizioni su 5 foto del test set |
 | `metrics.json`, `history.json` | metriche finali e storico per epoca (per riprodurre i grafici) |
 | `train.log` | log completo della sessione di training (40 epoche, 52 minuti) |
+
+---
+
+## Demo interattiva (browser)
+
+C'e' anche una piccola web app locale: trascini una foto, ne scatti una con la
+webcam, oppure provi uno dei **6 esempi in `samples/`** — e vedi la predizione con
+la barra di confidenza.
+
+```bash
+pip install flask          # unica dipendenza extra (gia' in requirements.txt)
+python3 app.py             # -> http://127.0.0.1:7860
+```
+
+```bash
+python3 app.py --port 8000        # porta diversa
+python3 app.py --host 0.0.0.0     # raggiungibile anche dal telefono in rete locale
+python3 app.py --ckpt altro.pt    # checkpoint diverso da best_catdog.pt
+```
+
+La demo funziona anche **senza** il dataset scaricato: il modello sta in
+`best_catdog.pt` (~5 MB) e gli esempi in `samples/` sono versionati nel repo.
+
+Endpoint JSON, utili anche da script:
+
+| Endpoint | Cosa fa |
+|---|---|
+| `POST /api/predict` | multipart, campo `image` → `{label, emoji, confidence, prob_dog, width, height}` |
+| `GET /api/samples` | elenco degli esempi disponibili |
+| `GET /api/sample/<nome>` | serve un'immagine di esempio |
+| `GET /api/random-sample` | nome + url di un esempio casuale |
+
+```bash
+curl -F image=@samples/cat_1.jpg http://127.0.0.1:7860/api/predict
+# {"label":"Cat","emoji":"🐱","confidence":1.0,"prob_dog":0.0,"confidence_pct":"100.00%", ...}
+```
+
+Oppure, senza browser, dalla riga di comando:
+
+```bash
+python3 predict.py samples/cat_1.jpg samples/dog_1.jpg --figure predizioni.png
+```
 
 ---
 
@@ -67,6 +111,9 @@ python train.py
 
 # 4. predizione
 python predict.py la_mia_foto.jpg
+
+# 5. demo web (opzionale)
+python3 app.py            # http://127.0.0.1:7860
 ```
 
 Config di default: `IMG_SIZE=128`, `BATCH_SIZE=64`, `NUM_EPOCHS=40`, `LR=1e-3`,
